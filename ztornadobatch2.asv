@@ -1,0 +1,150 @@
+function [results]=tornadobatch(ac_name,state_name);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% tornadobatch, subsidary function to TORNADO	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	ac_name = name of geometry file (string)
+%	state_name=name of state file (string)
+%	JID=job identifier, output filename (string)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+results=[];
+i=0;
+j=0;
+settings=config('startup')
+
+cd(settings.acdir)
+	load('747-400');
+cd(settings.hdir)
+
+cd(settings.sdir)
+	load('AB2state');
+cd(settings.hdir)
+
+
+quest=1;                %Simple state solution, could be something else
+                        %but then you'll have to change below too,
+                        %especially the "Load data" section.
+JID='batchjob';             
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHANGE GEOMETRY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here you may enter whatever changes to the geometry you like
+%
+% Examples:
+%   Change number of panels for easy grid convergence.
+%   Change a rudder setting, or tailplane twist for trim computations
+%   Change the geometry in any other way.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+geo=geo;
+geo.nx(1,1)=1;
+geo.nx(1,2)=2;
+geo.nx(1,3)=4;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHANGE STATE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Here you may enter whatever changes to the state you like
+%
+% Examples:
+%   Change angle of attack or sideslip.
+%   Change altitude, airspeed or ainything else
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%state.PGcorr=0;
+state.alpha=4*pi/180;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+lattictype=1;%Standard VLM
+%lattictype=0;%Tornado freestream following wake VLM
+%geo.ny(1,1:2)=2;
+
+
+
+%% Single aircraft selection.
+[lattice1,ref]=fLattice_setup2(geo,state,lattictype);
+[results]=solver9(results,state,geo,lattice1,ref);
+[R0]=coeff_create3(results,lattice1,state,ref,geo);
+
+lsize=size(results.F);
+panels=lsize(1);
+
+
+DP=[0 -70 0 70
+   70 140 210 280
+    0 0 0 0];   %Delta position vector.
+
+[void nAircraft]=size(DP);
+
+
+[lattice]=fmultLattice(lattice1,DP);
+
+
+
+ref=ref;
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+[results]=solver9(results,state,geo,lattice,ref);
+%[RT]=coeff_create3(results,lattice,state,ref,geo);
+
+
+[a b c]=size(results.F);
+
+
+for i=1:nAircraft+1;
+
+    index=[((i-1)*panels+1):i*panels];
+    
+    
+R1.dwcond=results.dwcond;
+R1.F=results.F(index,:,:);
+
+R1.FORCE=sum(results.F(index,:,:),1);
+R1.M=results.M(index,:,:)
+R1.MOMENTS=sum(results.M(index,:,:),1);
+R1.gamma=results.gamma(index,:,:);
+
+
+R(i)=coeff_create3(R1,lattice1,state,ref,geo);
+
+end
+
+format compact
+Basedrag=R0.CD
+
+for i=1:nAircraft+1
+    Drags(i)=R(i).CD;
+end
+Drags
+gain=1-Drags/Basedrag
+
+geometryplot(lattice,geo,ref);
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
