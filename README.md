@@ -24,6 +24,10 @@ To write your final report:
 
 * Airfoils database: <https://m-selig.ae.illinois.edu/ads/coord_database.html>
 
+## How to contribute to this repo?
+
+To share any contribution with all your colleagues, after creating a [GitHub Pro/Edu account](https://education.github.com/discount_requests/new), you just have to create a pull request following [these instructions]( https://help.github.com/en/articles/creating-a-pull-request-from-a-fork).
+
 ## Contacts
 
 For any issue about the course, please contact <carlomassimo.casciola@uniroma1.it>
