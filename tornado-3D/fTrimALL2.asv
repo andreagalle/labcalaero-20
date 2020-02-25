@@ -1,0 +1,157 @@
+function [results2,rudderangle,Treq]=trim(geo,state,mg,engine,body)
+%Trimfunction for TORNADO
+% This trimfunction keeps the lift coefficient constant bay changing the
+% state angle of attack.
+%
+% Trimaxis is the body axis of momentum to trim around:
+%   1=l (roll);
+%   2=m (pitch);
+%   3=n (yaw);
+%
+% Trimwing is the wing number to change incidence on to acieve trim
+%
+% Trimrudder is the rudder (control effector) to change setting of in order
+% to acieve trim.
+%
+%  Output:
+%   rudderangle is either the needed change in incedence of a wing, Or the 
+%   rudder setting needed to acieve trim.
+%%%%%%%%
+max_iterations=20;
+results.matrix=ones(9,6,1);        
+converged=0;
+rudderangle=0; 
+solvertype=1;
+results2=[];
+R(2)=0;
+
+dx=engine.cgpos(1)-geo.CG(1);
+dz=engine.cgpos(3)-geo.CG(3);
+g=0;%-atan(engine.thrustv(3)/engine.thrustv(1))
+
+[rho a p mu]=ISAtmosphere(state.ALT);     %Calling International Standard atmosphere.
+Mach=state.AS/a;    
+
+%% Computing baseline results
+
+
+
+
+
+geo.ref_point=geo.CG; %Computing moments around CG
+
+[lattice,ref]=fLattice_setup2(geo,state,solvertype); 
+qS=0.5*state.rho*state.AS^2*ref.S_ref;
+c=ref.C_mac;
+
+[CD0_wing results.Re results.Swet results.Vol]=zeroliftdragpred(Mach,state.ALT,geo,ref);
+ CD0_blunt=zldpblunt(Mach,state.ALT,body,ref); %Blunt bodies: Fuse, nacelle...etc..
+ CD0f=sum(sum(CD0_wing))+sum(CD0_blunt)
+
+[results]=solver9(results,state,geo,lattice,ref);
+[results]=coeff_create3(results,lattice,state,ref,geo);
+
+
+trimwing=2; %MUST TRIM WITH SECOND WING.
+rudderangle=0.01*pi/180;
+Raxle=[0 cos(geo.dihed(trimwing,1)) sin(geo.dihed(trimwing,1))];
+hinge_pos=[geo.startx(trimwing)+0.25*geo.c(trimwing) geo.starty(trimwing) geo.startz(trimwing) ];
+
+I=0;
+while converged==0
+I=I+1;
+        lattice=wingrotation2(trimwing,geo,lattice,Raxle,hinge_pos,rudderangle);
+
+%% Second run    
+    [results2]=solver9(results2,state,geo,lattice,ref);
+    [results2]=coeff_create3(results2,lattice,state,ref,geo);    
+
+%% Differentiating
+    a=state.alpha;
+    dD=qS*(results2.CD-results.CD);
+    dL=qS*(results2.CL-results.CL);
+    dm=c*qS*(results2.Cm-results.Cm);
+      
+    Ddt=(dD)/rudderangle;
+    Ldt=(dL)/rudderangle;
+    mdt=(dm)/rudderangle;
+
+    if abs(dD/qS)<0.001;
+        if abs(dL/qS)<0.001;
+            if abs(dm/(qS*c))<0.001
+                Treq=R(2);
+                return
+            end
+        end
+    end
+    
+    
+    
+    D0=qS*(results.CD+CD0f);
+    L0=qS*(results.CL);
+    m0=c*qS*(results.Cm);
+
+    Da=qS*(results.CD_a);
+    La=qS*(results.CL_a);
+    ma=c*qS*(results.Cm_a);
+    
+
+    V0=[D0 L0-mg m0]';
+
+    A=[Da      -sin(g+a)                   Ddt
+       La      sin(g+a)                    Ldt
+       ma      -cos(g)*dz-sin(g)*dx        mdt];
+
+    R=A\(-V0);
+
+    state.alpha=state.alpha+R(1)*0.4;
+    rudderangle=R(3)*0.4;    
+    results=results2;
+    
+    if I==max_iterations
+        Treq=0;
+        disp('NOT CONVERGED')
+        return
+        
+    end
+    
+
+
+end
+
+toc
+
+
+
+    return
+    
+    
+    
+
+        
+        
+   results.matrix(:,:)=[results.CL results.CL_a results.CL_b results.CL_P results.CL_Q results.CL_R
+           results.CD results.CD_a results.CD_b results.CD_P results.CD_Q results.CD_R
+           results.CC results.CC_a results.CC_b results.CC_P results.CC_Q results.CC_R
+           results.Cl results.Cl_a results.Cl_b results.Cl_P results.Cl_Q results.Cl_R
+           results.Cm results.Cm_a results.Cm_b results.Cm_P results.Cm_Q results.Cm_R
+           results.Cn results.Cn_a results.Cn_b results.Cn_P results.Cn_Q results.Cn_R
+           results.CX results.CX_a results.CX_b results.CX_P results.CX_Q results.CX_R
+           results.CY results.CY_a results.CY_b results.CY_P results.CY_Q results.CY_R
+           results.CZ results.CZ_a results.CZ_b results.CZ_P results.CZ_Q results.CZ_R]; 
+end
+   
+
+
+
+
+
+
+
+
+
+
+
+
+   
+

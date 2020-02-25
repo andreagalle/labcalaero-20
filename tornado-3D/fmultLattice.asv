@@ -1,0 +1,42 @@
+function [l,ref]=fmultLattice(lattice,DP)
+
+
+[void nAircraft]=size(DP);
+
+
+l.COLLOC=sparse(lattice.COLLOC);
+l.N=lattice.N;
+l.XYZ=lattice.XYZ;
+l.VORTEX=lattice.VORTEX;
+
+
+for i=1:nAircraft
+dx=DP(1,i);
+dy=DP(2,i);
+dz=DP(3,i);
+
+
+l2(:,1)=lattice.COLLOC(:,1)+dx*i;
+l2(:,2)=lattice.COLLOC(:,2)+dy*i;
+l2(:,3)=lattice.COLLOC(:,3)+dz*i;
+
+l.COLLOC=[l.COLLOC;l2];
+
+N2(:,1)=lattice.XYZ(:,:,1)+dx*1;
+
+
+
+
+l.N(:,1)=[l.N(:,1);lattice.N(:,1)];
+l.N(:,2)=[l.N(:,2);lattice.N(:,2)];
+l.N(:,3)=[l.N(:,3);lattice.N(:,3)];
+
+l.XYZ(:,:,1)=[l.XYZ(:,:,1);lattice.XYZ(:,:,1)+dx];
+l.XYZ(:,:,2)=[l.XYZ(:,:,2);lattice.XYZ(:,:,2)+dy];
+l.XYZ(:,:,3)=[l.XYZ(:,:,3);lattice.XYZ(:,:,3)+dz];
+
+l.VORTEX(:,:,1)=[l.VORTEX(:,:,1);lattice.VORTEX(:,:,1)+dx];
+l.VORTEX(:,:,2)=[l.VORTEX(:,:,2);lattice.VORTEX(:,:,2)+dy];
+l.VORTEX(:,:,3)=[l.VORTEX(:,:,3);lattice.VORTEX(:,:,3)+dz];
+
+end
