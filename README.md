@@ -2,6 +2,8 @@
 
 Welcome to the Computational Aerodynamics Lab, here below you will find some useful information about the (free) Software you will need during the course, where to download it and some instruction to help you trought the preparation of the final report, to be delivered before the end of the laboratory course.
 
+![alt text](https://github.com/andreagalle/labcalaero-20/blob/DRS-pic/doc/DRS-closed.jpg)
+
 ## Software download
 
 To carry out your simulations using the Vortex Lattice Method (VLM) you will need at least one of the following solvers:
