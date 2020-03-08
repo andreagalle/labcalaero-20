@@ -4,9 +4,6 @@ Welcome to the Computational Aerodynamics Lab, here below you will find some use
 
 ![alt text](https://github.com/andreagalle/labcalaero-20/blob/master/doc/gallery/DRS-closed.jpg)
 
-<!-- <img align="left" width="480" src="https://github.com/andreagalle/labcalaero-20/blob/master/doc/DRS-closed.jpg">
-<img align="right" width="350" src="https://github.com/andreagalle/labcalaero-20/blob/football-pic/doc/football-3D.png"> <br/><br/> -->
-
 ## Software download
 
 To carry out your simulations using the Vortex Lattice Method (VLM) you will need at least one of the following solvers:
