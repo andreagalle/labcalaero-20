@@ -2,10 +2,13 @@
 
 Welcome to the Computational Aerodynamics Lab, here below you will find some useful information about the (free) Software you will need during the course, where to download it and some instruction to help you trought the preparation of the final report, to be delivered before the end of the laboratory course.
 
-![alt text](https://github.com/andreagalle/labcalaero-20/blob/master/doc/gallery/DRS-closed.jpg)
+## How to use Meet to join the Virtual Classroom in three steps
 
-<!-- <img align="left" width="480" src="https://github.com/andreagalle/labcalaero-20/blob/master/doc/DRS-closed.jpg">
-<img align="right" width="350" src="https://github.com/andreagalle/labcalaero-20/blob/football-pic/doc/football-3D.png"> <br/><br/> -->
+1. Open your browser and go to the following url: <https://meet.google.com/fhz-xfam-bxd>
+1. Click on participate and mute your microphone (to avoid noise to all the other participants)
+1. Open the mic only to ask questions
+
+![alt text](https://github.com/andreagalle/labcalaero-20/blob/master/doc/gallery/DRS-closed.jpg)
 
 ## Software download
 
