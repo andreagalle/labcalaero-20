@@ -2,7 +2,7 @@
 
 Welcome to the Computational Aerodynamics Lab, here below you will find some useful information about the (free) Software you will need during the course, where to download it and some instruction to help you trought the preparation of the final report, to be delivered before the end of the laboratory course.
 
-## How to use Meet to join the Virtual Classroom in three steps
+## How to use Meet to join the Virtual Classroom [guide](lecture-notes/HowToUseMeetToJoinVirtualClassroom.pdf) in 3 simple steps
 
 1. Open your browser and go to the following url: <https://meet.google.com/fhz-xfam-bxd>
 1. Click on participate and mute your microphone (to avoid noise to all the other participants)
