@@ -4,7 +4,7 @@ Welcome to the Computational Aerodynamics Lab, here below you will find some use
 
 ## How to use Meet to join the Virtual Classroom [guide](lecture-notes/HowToUseMeetToJoinVirtualClassroom.pdf) in 3 simple steps
 
-1. Open your browser and go to the following url: <https://meet.google.com/fhz-xfam-bxd>
+1. Open your browser and go to the following url: <https://meet.google.com/oyb-mjcz-gfu> **UPDATED LINK !!!**
 1. Click on participate and mute your microphone (to avoid noise to all the other participants)
 1. Open the mic only to ask questions
 
