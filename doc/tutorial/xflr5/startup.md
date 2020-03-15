@@ -28,4 +28,16 @@ You just have to open the dropdown menu, clicking on `File` and select the envir
 
 ![alt text](screenshots/airfoil_01.png)
 
-Looking at the previous screenshot, you can see that instead of creating a whole new project, from the same dropdown menu it was possible to load a previously saved state. Thus, always remember to save your current work before exiting and closing xflr5.
+Looking at the previous screenshot, you can see that instead of creating a whole new project, from the same dropdown menu it was possible to load a previously saved state (project). Thus, always remember to save your current work (project) before exiting and closing xflr5.
+
+![alt text](screenshots/airfoil_02.png)
+
+Into the `Direct Foil Design` environment it is possible to draw a new airfoil - just moving the control points through which a spline is interpolated - starting from the scratch. It is also possibe to load already existing airfoils, you may find in any database, or just loading one of the airfoils provided in the `xflr5-pp/airfoil/data/` directory.
+
+![alt text](screenshots/airfoil_03.png)
+
+Here below, for example, we uploaded the `ag25.dat` airfoil (Drela AG25 airfoil used on the Bubble Dancer R/C DLG) that you can find on this online database: <https://m-selig.ae.illinois.edu/ads/coord_database.html>
+
+![alt text](screenshots/airfoil_04.png)
+
+Now you are ready to step into the [Airfoils](airfoils.md) analysis clicking in the dropdown menu on `File > XFoil Direct Analysis`.
