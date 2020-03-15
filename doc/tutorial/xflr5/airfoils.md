@@ -69,6 +69,6 @@ To export the pressure distribution (Cp) and the velocity on the airfoil, click 
 
 Save the data on the same `xflr5-pp/airfoil/data/` directory, as shown, chosing appropriate names:
 1. for the sake of clarity - it is always better to help someone else reading your code (since this one could be you)
-2. to be consistent with the `paths` provided in your post-processing scripts, e.g. the [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m)
+2. to be consistent with the `paths` provided in your post-processing scripts, e.g. the `filename` in [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m)
 
 ![alt text](screenshots/airfoil_16.png)
