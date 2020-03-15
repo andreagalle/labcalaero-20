@@ -25,7 +25,7 @@ To post-process the output of your simulations, you may need need one of the fol
 
 To write your final report:
 
-* [Overleaf](https://www.overleaf.com) if you want to acquaint yourself with a new & poweful editing tool (LaTex) - just play around with this [template](http://www.ingaero.uniroma1.it/attachments/079_Template_Elaborato_Finale_BAER_2019_latex.zip) 
+* [Overleaf](https://www.overleaf.com) to acquaint yourself with a new & poweful editing tool (LaTex) - just play around with this [template](http://www.ingaero.uniroma1.it/attachments/079_Template_Elaborato_Finale_BAER_2019_latex.zip) 
 * [Word](https://www.uniroma1.it/it/pagina/microsoft-office-studenti-e-personale-sapienza) of course is anyway a good option
 
 ## Additional material
