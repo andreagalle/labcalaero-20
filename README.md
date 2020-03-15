@@ -2,19 +2,19 @@
 
 Welcome to the Computational Aerodynamics Lab, here below you will find some useful information about the (free) Software you will need during the course, where to download it and some instruction to help you trought the preparation of the final report, to be delivered before the end of the laboratory course.
 
-## How to use Meet to join the Virtual Classroom [guide](lecture-notes/HowToUseMeetToJoinVirtualClassroom.pdf) in 3 simple steps
+## How to use Meet to join the Virtual Classroom - [guide in 3 simple steps](lecture-notes/HowToUseMeetToJoinVirtualClassroom.pdf)
 
 1. Open your browser and go to the following url: <https://meet.google.com/**xxx-yyyy-zzz**> **(ask for the meeting code!)**
 1. Click on participate and mute your microphone (to avoid noise to all the other participants)
 1. Open the mic only to ask questions
 
-![alt text](https://github.com/andreagalle/labcalaero-20/blob/master/doc/gallery/DRS-closed.jpg)
+![alt text](/doc/gallery/DRS-closed.jpg)
 
 ## Software download
 
 To carry out your simulations using the Vortex Lattice Method (VLM) you will need at least one of the following solvers:
 
-* [XFLR5](http://www.xflr5.tech/xflr5.htm) is an analysis tool for airfoils, wings and planes design at low Re - [here](https://sourceforge.net/projects/xflr5/files/) downloadable (cross-platform freeware)
+* [XFLR5](http://www.xflr5.tech/xflr5.htm) is an analysis tool for airfoils, wings and planes design - [here](https://sourceforge.net/projects/xflr5/files/) downloadable (cross-platform freeware)
 * [Tornado](http://tornado.redhammer.se) is a Matlab implementation for linear aerodynamic wing design - [here](http://tornado.redhammer.se/index.php/download) downloadable (open-source code)
 
 To post-process the output of your simulations, you may need need one of the following:
@@ -25,12 +25,13 @@ To post-process the output of your simulations, you may need need one of the fol
 
 To write your final report:
 
-* [Overleaf](https://www.overleaf.com) if you want to acquaint yourself with a new & poweful editing tool (LaTex) - just play around with this [template](http://www.ingaero.uniroma1.it/attachments/079_Template_Elaborato_Finale_BAER_2019_latex.zip) 
+* [Overleaf](https://www.overleaf.com) to acquaint yourself with a new & poweful editing tool (LaTex) - just play around with this [template](http://www.ingaero.uniroma1.it/attachments/079_Template_Elaborato_Finale_BAER_2019_latex.zip) 
 * [Word](https://www.uniroma1.it/it/pagina/microsoft-office-studenti-e-personale-sapienza) of course is anyway a good option
 
 ## Additional material
 
-* Airfoils database: <https://m-selig.ae.illinois.edu/ads/coord_database.html>
+* Airfoils [database online](https://m-selig.ae.illinois.edu/ads/coord_database.html)
+* Getting started with xflr5 [quick guide](/doc/tutorial/xflr5/startup.md)
 
 ## How to contribute to this repo?
 
