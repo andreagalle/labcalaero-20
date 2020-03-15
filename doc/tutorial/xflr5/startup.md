@@ -30,6 +30,8 @@ You just have to open the dropdown menu, clicking on `File` and select the envir
 
 Looking at the previous screenshot, you can see that instead of creating a whole new project, from the same dropdown menu it was possible to load a previously saved state (project). Thus, always remember to save your current work (project) before exiting and closing xflr5.
 
+## Direct Foil Design
+
 ![alt text](screenshots/airfoil_02.png)
 
 Into the `Direct Foil Design` environment it is possible to draw a new airfoil - just moving the control points through which a spline is interpolated - starting from the scratch. It is also possibe to load already existing airfoils, you may find in any database, or just loading one of the airfoils provided in the `xflr5-pp/airfoil/data/` directory.
