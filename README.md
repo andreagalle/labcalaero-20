@@ -14,7 +14,7 @@ Welcome to the Computational Aerodynamics Lab, here below you will find some use
 
 To carry out your simulations using the Vortex Lattice Method (VLM) you will need at least one of the following solvers:
 
-* [XFLR5](http://www.xflr5.tech/xflr5.htm) is an analysis tool for airfoils, wings & planes design at low Re - [here](https://sourceforge.net/projects/xflr5/files/) downloadable (cross-platform freeware)
+* [XFLR5](http://www.xflr5.tech/xflr5.htm) is an analysis tool for airfoils, wings and planes design - [here](https://sourceforge.net/projects/xflr5/files/) downloadable (cross-platform freeware)
 * [Tornado](http://tornado.redhammer.se) is a Matlab implementation for linear aerodynamic wing design - [here](http://tornado.redhammer.se/index.php/download) downloadable (open-source code)
 
 To post-process the output of your simulations, you may need need one of the following:
