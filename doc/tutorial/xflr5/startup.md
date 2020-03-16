@@ -6,6 +6,7 @@ _Navigation_
 2. [Airfoils](airfoils.md)
 3. [Wings](wings.md)
 4. [Plane](plane.md)
+5. [Matlab](matlab.md)
 
 ## Welcome to xflr5
 
@@ -17,6 +18,8 @@ XFLR5 is an analysis tool for airfoils, wings and planes operating at low Reynol
 to learn more about this amazing project, go to the following web page: <http://www.xflr5.tech/xflr5.htm> where you can find additional material, support and in general informations about any update for this nice program.
 
 What follows, here below, is a coincise hands-on guide to run your first simulation - using xflr5 - on your machine, starting from the airfoil design/analysis up to the simulation of an entire wings system accounting for all the finite wing phenomena. This tutorial will be mainly made of screenshots guiding you through this wonderful GUI, here in its macOS version, but it should look very similar on the other platforms.
+
+This example has been carried out using `xflr5_6.44_macOSX` version. Please report any issue writing [here](mailto:andrea.gallegati@uniroma1.it).
 
 ## Running xflr5
 

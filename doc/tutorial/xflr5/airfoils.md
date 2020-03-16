@@ -6,6 +6,7 @@ _Navigation_
 2. [Airfoils](airfoils.md)
 3. [Wings](wings.md)
 4. [Plane](plane.md)
+5. [Matlab](matlab.md)
 
 ## XFoil Direct Analysis
 
@@ -72,3 +73,5 @@ Save the data on the same `xflr5-pp/airfoil/data/` directory, as shown, chosing 
 2. to be consistent with the `paths` provided in your post-processing scripts, e.g. the `filename` in [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m)
 
 ![alt text](screenshots/airfoil_16.png)
+
+If you would like to post-process these data - for example using `matlab` - [jump here](matlab.md) to have a brief survey on how to run the [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m) matlab script here provided, for example.
