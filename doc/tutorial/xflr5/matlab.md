@@ -34,7 +34,7 @@ Before running this script remember to edit it - changing the `filename` to `'da
 
 ![alt text](screenshots/matlab_04.png)
 
-Now it's time to run our [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m) program hitting the `Run` button - on the top of the `matlab` GUI here above - or just typing `plot_airfoil_cp` in the `Command Window` as shown above. In the latter case remember to hit enter! :wink:
+Now it's time to run our [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m) program hitting the `Run` button - on the top of the `matlab` GUI above - or just typing `plot_airfoil_cp` in the `Command Window` as shown here above. In the latter case remember to hit enter! :wink:
 
 ![alt text](screenshots/matlab_05.png)
 
