@@ -6,6 +6,7 @@ _Navigation_
 2. [Airfoils](airfoils.md)
 3. [Wings](wings.md)
 4. [Plane](plane.md)
+5. [Matlab](matlab.md)
 
 ## Welcome to xflr5
 

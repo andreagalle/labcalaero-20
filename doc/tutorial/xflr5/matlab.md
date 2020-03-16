@@ -1,4 +1,4 @@
-# Wings
+# Matlab
 
 _Navigation_
 
@@ -8,4 +8,4 @@ _Navigation_
 4. [Plane](plane.md)
 5. [Matlab](matlab.md)
 
-## Wing and Plane Design
+## Matlab post processing
