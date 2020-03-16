@@ -19,6 +19,8 @@ to learn more about this amazing project, go to the following web page: <http://
 
 What follows, here below, is a coincise hands-on guide to run your first simulation - using xflr5 - on your machine, starting from the airfoil design/analysis up to the simulation of an entire wings system accounting for all the finite wing phenomena. This tutorial will be mainly made of screenshots guiding you through this wonderful GUI, here in its macOS version, but it should look very similar on the other platforms.
 
+This example has been run using `xflr5_6.44_macOSX` version. Please report any issue writing [here](andrea.gallegati@uniroma1.it).
+
 ## Running xflr5
 
 Once you download the latest version of xflr5 (going here <https://sourceforge.net/projects/xflr5/files/>) just navigate the directory tree untill you find the executable file - with the xflr5 icon - and launch it!
