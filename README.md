@@ -32,6 +32,7 @@ To write your final report:
 
 * Airfoils [database online](https://m-selig.ae.illinois.edu/ads/coord_database.html)
 * Getting started with `xflr5` reading this [quick guide](/doc/tutorial/xflr5/startup.md)
+* Start using `git` with [Visual Studio Code](https://code.visualstudio.com/docs/introvideos/versioncontrol) (better) or [GitHub Desktop](https://desktop.github.com) (worse)
 
 ## How to contribute to this repo?
 
