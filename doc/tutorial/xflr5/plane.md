@@ -8,4 +8,9 @@ _Navigation_
 4. [Plane](plane.md)
 5. [Matlab](matlab.md)
 
-## Wing and Plane Design
+## Plane Design
+
+![alt text](screenshots/plane_01.png)
+![alt text](screenshots/plane_02.png)
+![alt text](screenshots/plane_03.png)
+![alt text](screenshots/plane_04.png)
