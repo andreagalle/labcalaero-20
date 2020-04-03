@@ -32,7 +32,7 @@ To write your final report:
 
 * Airfoils [database online](https://m-selig.ae.illinois.edu/ads/coord_database.html)
 * Getting started with `xflr5` reading this [quick guide](/doc/tutorial/xflr5/startup.md)
-* Start using `git` with [Visual Studio Code](https://code.visualstudio.com/docs/introvideos/versioncontrol) (better) or [GitHub Desktop](https://desktop.github.com) <!--(worse)-->
+* Getting used to `git` workflow with [Visual Studio Code](https://code.visualstudio.com/docs/introvideos/versioncontrol) (better), [GitHub Desktop](https://desktop.github.com) <!--(worse)--> or even [Matlab](https://it.mathworks.com/help/matlab/source-control.html) (here's a [quick intro](https://blogs.mathworks.com/community/2014/10/20/matlab-and-git/))
 
 ## How to contribute to this repo?
 
