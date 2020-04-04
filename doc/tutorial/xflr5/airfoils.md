@@ -48,7 +48,7 @@ Do not forget to **uncheck** the `Viscous` and `Init BL` boxes (we don't need an
 
 Click on the `Analyze` button to launch the analysis, on the given profile, for the provided angle of attack sequence. A console should (briefly) appear on your screen, showing the analysis log. This is something you might need to check if anything goes bad (we hope not!). 
 
-If everything works, the pressure distribution (Cp) should appear on your screen. From the same window - as you can see at the top of the screen here below - you can display the different results you carried out running the analysis on another airfoil, at different flight conditions (changing the anlysis parameters) or just varying the angle of attack within the `Sequence` prescribed.
+If everything works, the pressure distribution (Cp) should appear on your screen. From the same window - as you can see at the top of the screen here below - you can display the different results you carried out running the analysis on another airfoil, at different flight conditions (changing the anlysis parameters) or just varying the aoa within the prescribed `Sequence`.
 
 ![alt text](screenshots/airfoil_12.png)
 
