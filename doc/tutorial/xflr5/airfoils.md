@@ -10,7 +10,7 @@ _Navigation_
 
 ## XFoil Direct Analysis
 
-Once you move into the `File > XFoil Direct Analysis` environment, here you can run the airfoil analysis - always remember to do that before stepping in the `Wing and Plane Design`.
+Once you move into the `File > XFoil Direct Analysis` environment, here you can run the airfoil analysis - always remember to do that before stepping in the `File > Wing and Plane Design` environment.
 
 ![alt text](screenshots/airfoil_05.png)
 
