@@ -40,7 +40,7 @@ Click on the dropdown menu `Analysis > Define an Analysis`and for this test case
 
 ![alt text](screenshots/airfoil_10.png)
 
-This will enable, on the right side of your screen, the `Direct foil analysis` window, with the buttons to configure the angle of attack `Sequence`.
+This will enable, on the right side, the `Direct foil analysis` window, where to configure the *aoa* `Sequence`.
 
 Do not forget to **uncheck** the `Viscous` and `Init BL` boxes (we don't need any viscous correction) and above all to **check** the `Store Opp` one. If not, the analysis is processed by the solver, but later discarded!
 
@@ -75,3 +75,5 @@ Save the data on the same `xflr5-pp/airfoil/data/` directory, as shown, chosing 
 ![alt text](screenshots/airfoil_16.png)
 
 If you would like to post-process these data - for example using `matlab` - [jump here](matlab.md) to have a brief survey on how to run the [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m) matlab script here provided, for example.
+
+Once you define - at least - an airfoil you can design a finite wing, following the instructions within the [next section](wing.md).
