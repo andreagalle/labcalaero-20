@@ -10,7 +10,7 @@ _Navigation_
 
 ## XFoil Direct Analysis
 
-Once you move into the `File > XFoil Direct Analysis` environment, here you can run the airfoil analysis - always remember to do that before stepping in the `Wing and Plane Design`.
+Once you move into the `File > XFoil Direct Analysis` environment, here you can run the airfoil analysis - always remember to do that before stepping in the `File > Wing and Plane Design` environment.
 
 ![alt text](screenshots/airfoil_05.png)
 
@@ -40,7 +40,7 @@ Click on the dropdown menu `Analysis > Define an Analysis`and for this test case
 
 ![alt text](screenshots/airfoil_10.png)
 
-This will enable, on the right side of your screen, the `Direct foil analysis` window, with the buttons to configure the angle of attack `Sequence`.
+This will enable, on the right side, the `Direct foil analysis` window, where to configure the *aoa* `Sequence`.
 
 Do not forget to **uncheck** the `Viscous` and `Init BL` boxes (we don't need any viscous correction) and above all to **check** the `Store Opp` one. If not, the analysis is processed by the solver, but later discarded!
 
@@ -48,7 +48,7 @@ Do not forget to **uncheck** the `Viscous` and `Init BL` boxes (we don't need an
 
 Click on the `Analyze` button to launch the analysis, on the given profile, for the provided angle of attack sequence. A console should (briefly) appear on your screen, showing the analysis log. This is something you might need to check if anything goes bad (we hope not!). 
 
-If everything works, the pressure distribution (Cp) should appear on your screen. From the same window - as you can see at the top of the screen here below - you can display the different results you carried out running the analysis on another airfoil, at different flight conditions (changing the anlysis parameters) or just varying the angle of attack within the `Sequence` prescribed.
+If everything works, the pressure distribution (Cp) should appear on your screen. From the same window - as you can see at the top of the screen here below - you can display the different results you carried out running the analysis on another airfoil, at different flight conditions (changing the anlysis parameters) or just varying the aoa within the prescribed `Sequence`.
 
 ![alt text](screenshots/airfoil_12.png)
 
@@ -75,3 +75,5 @@ Save the data on the same `xflr5-pp/airfoil/data/` directory, as shown, chosing 
 ![alt text](screenshots/airfoil_16.png)
 
 If you would like to post-process these data - for example using `matlab` - [jump here](matlab.md) to have a brief survey on how to run the [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m) matlab script here provided, for example.
+
+Once you define - at least - an airfoil you can design a finite wing, following the instructions within the [next section](wing.md).

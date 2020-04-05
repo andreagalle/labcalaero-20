@@ -51,3 +51,6 @@ What this very simple demo shows us is (only) that the above functions do their 
 Comparing the first half against the second one, of the [`plot_airfoil_cp.m`](/xflr5-pp/airfoil/plot_airfoil_cp.m) matlab script here above, can you figure out a way to combine together their features to get the resultant of the Cp distribution along the direction perpendicular (lift) and parallel (drag) to the free-stream velocity, for each value of the *angle of attack*?
 
 Would it be that hard to wrap everything within a `for` loop in order to have the C<sub>L</sub> and C<sub>D</sub> at each value of &alpha; - the *angle of attack* - and thus to plot for example C<sub>L</sub> vs &alpha; ?
+
+Here you can find a possible solution: [`plot_airfoil_cl.m`](/xflr5-pp/airfoil/plot_airfoil_cl.m) !
+
