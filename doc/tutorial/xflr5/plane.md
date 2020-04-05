@@ -45,3 +45,11 @@ Here following, it is shown the [Drag Reduction System](https://en.wikipedia.org
 ![alt text](/doc/gallery/DRS-closed.jpg)
 ![alt text](/doc/gallery/DRS-open.jpg)
 
+###  X-wing starfighters
+
+![alt text](/doc/gallery/x-wing-design.png)
+
+Here following, it is shown the analysis around an [X-wing fighter](https://en.wikipedia.org/wiki/X-wing_fighter), a fictional spacecraft from *Star Wars*.
+
+![alt text](/doc/gallery/x-wing-analysis.png)
+
