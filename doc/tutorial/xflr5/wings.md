@@ -81,3 +81,6 @@ At any moment it is possible to make any change on your wing - clicking on the `
 One could refine the *Lattice mesh* changing the `Panels` number along each direction (`X-panels` and `Y-panels` entries) or their distribution (`X-dist` and `Y-dist`). Be sure to **check** the `Panels` box on the right, in order to make it visible any change you just made and to save it, clicking on the `Save` button in the lower right corner.
 
 ![alt text](screenshots/wing_15.png)
+
+Once you define the  `Main wing` you can keep going designing a whole plane - or at least a wing system - following the instructions within the [next section](plane.md).
+
