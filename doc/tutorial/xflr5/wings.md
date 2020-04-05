@@ -56,7 +56,9 @@ However the most important sections to pay attention for are:
 
 ![alt text](screenshots/wing_10.png)
 
-This will enable, on the right side of your screen, the `Plane analysis` window, with the buttons to configure the angle of attack `Sequence`. Do not forget to **check** the `Store Opp` box, not to discard the analysis processed by the solver. If not, click on the `Options > Restore toolbars` dropdown menu to make the `Plane analysis` window appearing.
+This will enable, on the right side of your screen, the `Plane analysis` window, with the buttons to configure the angle of attack `Sequence`. Do not forget to **check** the `Store Opp` box, not to discard the analysis processed by the solver. 
+
+If the `Plane analysis` window is not there, click `Options > Restore toolbars` to make it appearing.
 
 ![alt text](screenshots/wing_11.png)
 
