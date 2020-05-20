@@ -524,7 +524,7 @@
     \begin{minipage}[c]{130mm} 
   \begin{center}%
   \let \footnote \thanks
-    \textcolor{Sapienza}{\large Elaborato finale per il conseguimento\\ della Laurea in Ingegneria aerospaziale}
+    \textcolor{Sapienza}{\large Elaborato finale per il Laboratorio di Calcolo di Aerodinamica (AAF)}
 %    \vskip 3.5em%
     \vskip 4.5em%
     {\Large\bfseries \@title \par}%
@@ -534,7 +534,8 @@
       \begin{tabular}[t]{c}%
         Candidato: \@candidato\\[-.3em]
         Matricola: \@matricola\\[2em]
-        {\midsize\itshape Relatore: prof. \@relatore}\\[-.3em]
+        {\midsize\itshape Relatore: Prof. \@relatore}\\[-.3em]
+        {\midsize\itshape Correlatore: Ing. \@correlatore}\\[-.3em]
         {\midsize\itshape SSD: \@ssd}
       \end{tabular}\par}%
 %    \vskip 1em%
@@ -670,6 +671,7 @@
 
 \long\def\abstract#1{\long\def\@abstract{#1}}
 \long\def\relatore#1{\long\def\@relatore{#1}}
+\long\def\correlatore#1{\long\def\@correlatore{#1}}
 \long\def\ssd#1{\long\def\@ssd{#1}}
 \long\def\candidato#1{\long\def\@candidato{#1}}
 \long\def\matricola#1{\long\def\@matricola{#1}}
