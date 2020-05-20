@@ -36,6 +36,18 @@ What follows here below is just a collection of successful wing systems design a
 
 I hope you will get inspired looking at some of them.
 
+### Spitfire elliptical wing
+
+![alt text](/doc/gallery/spitfire-geometry.png)
+
+Here following, it is shown the analysis around a [Spitfire](https://en.wikipedia.org/wiki/Supermarine_Spitfire) with the velocity field over the optimal wing  
+
+![alt text](/doc/gallery/spitfire-velocity.png)
+
+and the streamlines with the vortices at the wing tips. 
+
+![alt text](/doc/gallery/spitfire-vortices.png)
+
 ### F1 rear wing
 
 ![alt text](/doc/gallery/DRS-rear-wing.jpg)
@@ -52,4 +64,16 @@ Here following, it is shown the [Drag Reduction System](https://en.wikipedia.org
 Here following, it is shown the analysis around an [X-wing fighter](https://en.wikipedia.org/wiki/X-wing_fighter), a fictional spacecraft from *Star Wars*.
 
 ![alt text](/doc/gallery/x-wing-analysis.png)
+
+###  NACA 4415 on Boeing 737 & Cessna 172 wings
+
+![alt text](/doc/gallery/NACA4415.png)
+
+Here following, it is shown the above mentioned `NACA 4415` airfoil on the [Boeing 737](https://en.wikipedia.org/wiki/Boeing_737) wing
+
+![alt text](/doc/gallery/NACA4415-boeing737.png)
+
+and the same airfoil on the [Cessna 172](https://en.wikipedia.org/wiki/Cessna_172) wing
+
+![alt text](/doc/gallery/NACA4415-cessna172.png)
 
