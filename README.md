@@ -9,6 +9,7 @@ Welcome to the Computational Aerodynamics Lab, here below you will find some use
 1. Open the mic only to ask questions
 
 ![alt text](/doc/gallery/DRS-closed.jpg)
+*F1 rear wing - closed DRS: M. Cesarini, G. Chiarolla, A. Di Filippo* <!-- Marco Cesarini, Giovanni Chiarolla, Alfonso Di Filippo -->
 
 ## Software download
 
@@ -33,6 +34,9 @@ To write your final report:
 * Airfoils [database online](https://m-selig.ae.illinois.edu/ads/coord_database.html)
 * Getting started with `xflr5` reading this [quick guide](/doc/tutorial/xflr5/startup.md)
 * Getting used to `git` workflow with [Visual Studio Code](https://code.visualstudio.com/docs/introvideos/versioncontrol) (better), [GitHub Desktop](https://desktop.github.com) <!--(worse)--> or even [Matlab](https://it.mathworks.com/help/matlab/source-control.html) (here's a [quick intro](https://blogs.mathworks.com/community/2014/10/20/matlab-and-git/))
+* [Video Lectures](/lectures/videos/README.md) to navigate to the uploaded Meet Streaming click here below:
+
+[![Watch the video](/doc/announcement/screenshots/screen-lect-31-03-2020.png)](/lectures/videos/README.md)
 
 ## How to contribute to this repo?
 
