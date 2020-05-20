@@ -9,6 +9,7 @@ Welcome to the Computational Aerodynamics Lab, here below you will find some use
 1. Open the mic only to ask questions
 
 ![alt text](/doc/gallery/DRS-closed.jpg)
+*F1 rear wing - closed DRS: M. Cesarini, G. Chiarolla, A. Di Filippo* <!-- Marco Cesarini, Giovanni Chiarolla, Alfonso Di Filippo -->
 
 ## Software download
 
