@@ -77,6 +77,7 @@ Here following, it is shown the [Drag Reduction System](https://en.wikipedia.org
 
 ![alt text](/doc/gallery/DRS-closed.jpg)
 *Closed DRS: M. Cesarini, G. Chiarolla, A. Di Filippo* <!-- Marco Cesarini, Giovanni Chiarolla, Alfonso Di Filippo -->
+
 ![alt text](/doc/gallery/DRS-open.jpg)
 *Open DRS: M. Cesarini, G. Chiarolla, A. Di Filippo* <!-- Marco Cesarini, Giovanni Chiarolla, Alfonso Di Filippo -->
 
