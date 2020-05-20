@@ -51,7 +51,7 @@ Here for example, you can change the `Auto Analysis Name`, if you are running di
 ![alt text](screenshots/wing_09.png)
 
 However the most important sections to pay attention for are:
-* the `Polar Type` (here above), depending on the parameter you want to keep constant while varying some others. For our purposes `Type 1 (Fixed Speed)` is fine - as it is the *Free Stream Speed* equal to `10 m/s` - since we will be varying instead the *Angle of Attack* (aoa).
+* the `Polar Type` (here above), depending on the parameter you want to keep constant while varying some others. For our purposes `Type 1 (Fixed Speed)` is fine - as it is the *Free Stream Speed* equal to `10 m/s` - since we will be varying instead the *Angle of Attack* (*aoa*).
 * the `Analysis` (here below), to choose among the `Analysis Method` here proposed. Since we are just dealing with the *Vortex Lattice Methods* (VLM), within this Lab there are two options, but the `Ring vortex (VLM2)` one is preferable allowing for some [*sideslip*](https://en.wikipedia.org/wiki/Slip_(aerodynamics)). Remember then to **uncheck** the `Viscous` option box
 
 ![alt text](screenshots/wing_10.png)
@@ -85,4 +85,14 @@ One could refine the *Lattice mesh* changing the `Panels` number along each dire
 ![alt text](screenshots/wing_15.png)
 
 Once you define the  `Main wing` you can keep going designing a whole plane - or at least a wing system - following the instructions within the [next section](plane.md).
+
+## Export data
+
+![alt text](screenshots/wing_16.png)
+
+To export the analysis results - at a given *aoa* - such that the pressure distribution (C<sub>p</sub>) on each panel or the reluting C<sub>L</sub> and C<sub>D</sub> over each chord-wise *strip*, save them clicking on `Current OpPoint > Export` (always right-clicking to open the dropdown menu). 
+
+![alt text](screenshots/wing_17.png)
+
+Save the data within the same `xflr5-pp/wing/` directory as shown above, chosing as usual appropriate names; especially to be consistent with the `paths` provided in your post-processing scripts (e.g. the `filename`). If you would like to post-process these data - for example using `matlab` - have a look at the [`CdClvsWingspan.m`](/xflr5-pp/wing/CdClvsWingspan.m) matlab script here provided.
 
