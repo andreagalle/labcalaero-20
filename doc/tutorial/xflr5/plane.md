@@ -32,7 +32,7 @@ As you can see from the `Plane Editor` window it would be possible to define a b
 
 ## Examples
 
-What follows here below is just a collection of successful wing systems design and analyses (you can find in this directory `xflr5-pp/plane/project/`), carried out following the instructions given in this quick guide and in particular within this closing section.
+What follows here below is just a collection of successful wing systems design and analyses (you can find in this directory `xflr5-pp/plane/xfl-projects/`), carried out following the instructions given in this quick guide and in particular within this closing section.
 
 I hope you will get inspired looking at some of them.
 
